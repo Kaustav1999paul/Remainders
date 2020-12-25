@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/five"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/comfortaa"
+        android:text="Cloud Storage System"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="14dp"
+        android:text="All your data is stored in cloud with high security."
+        android:layout_marginTop="5dp"
+        android:textColor="#FF5722"
+        android:paddingHorizontal="53dp"
+        android:gravity="center"/>
+
+</LinearLayout>

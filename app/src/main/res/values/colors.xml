@@ -11,20 +11,24 @@
     <color name="dot_one">#AAAAAA</color>
     <color name="dot_two">#AAAAAA</color>
     <color name="dot_three">#AAAAAA</color>
+    <color name="dot_four">#AAAAAA</color>
 
     <color name="active_one">#F44336</color>
     <color name="active_two">#03FF7D</color>
     <color name="active_three">#FFC107</color>
+    <color name="active_four">#D67272</color>
 
     <array name="active">
         <item>@color/active_one</item>
         <item>@color/active_two</item>
         <item>@color/active_three</item>
+        <item>@color/active_four</item>
     </array>
 
     <array name="inactive">
         <item>@color/dot_one</item>
         <item>@color/dot_two</item>
         <item>@color/dot_three</item>
+        <item>@color/dot_four</item>
     </array>
 </resources>

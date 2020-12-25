@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
         layouts = new int[]{
                 R.layout.layout_one,
                 R.layout.layout_two,
-                R.layout.layout_three
+                R.layout.layout_three,
+                R.layout.layout_four
         };
 
         NEXT.setOnClickListener(new View.OnClickListener() {
