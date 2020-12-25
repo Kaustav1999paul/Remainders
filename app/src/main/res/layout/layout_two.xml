@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/three"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/comfortaa"
+        android:gravity="center"
+        android:text="One click add ToDo"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="14dp"
+        android:text="With just your one click, add your ToDo of the Day."
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="50dp"
+        android:textColor="#00FF88"
+        android:gravity="center"/>
+
+</LinearLayout>
