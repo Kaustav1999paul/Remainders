@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:gravity="center"
     tools:context=".AuthActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Stay"
+        android:textColor="#000000"
+        android:textFontWeight="10"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textFontWeight="10"
+        android:layout_marginLeft="40dp"
+        android:text="Focused with"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textFontWeight="10"
+        android:layout_marginLeft="40dp"
+        android:text="your Goals."/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:textColor="#FFFFFF"
+        android:text="Login"
+        android:elevation="10dp"
+        android:shadowRadius="10"
+        android:shadowColor="#F44336"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_button"/>
+</LinearLayout>
