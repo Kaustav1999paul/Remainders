@@ -25,6 +25,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_height="35dp"/>
             <EditText
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
@@ -38,6 +39,7 @@
         </LinearLayout>
 
         <EditText
+            android:id="@+id/desc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="top"
@@ -53,6 +55,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_round_check_24"

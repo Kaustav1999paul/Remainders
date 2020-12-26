@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoApp">
-
+        <activity
+            android:name=".AccountActivity"
+            android:theme="@style/Details"></activity>
         <activity
             android:name=".AddToDoActivity"
-            android:theme="@style/Details"/>
+            android:theme="@style/Details" />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Details" />
         <activity
             android:name=".AuthActivity"
             android:theme="@style/Details" />
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/Details">
