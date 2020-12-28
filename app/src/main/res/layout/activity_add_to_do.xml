@@ -66,4 +66,34 @@
         app:elevation="15dp"
         android:layout_alignParentRight="true"
         android:layout_margin="40dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/isChecked"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#A9FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="40dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/completed"
+                android:layout_width="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:text="Completed"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

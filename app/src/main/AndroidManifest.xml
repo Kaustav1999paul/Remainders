@@ -10,14 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoApp">
         <activity
-            android:name=".AccountActivity"
-            android:theme="@style/Details"></activity>
-        <activity
             android:name=".AddToDoActivity"
             android:theme="@style/Details" />
         <activity
             android:name=".HomeActivity"
-            android:theme="@style/Details" />
+            android:theme="@style/Home" />
         <activity
             android:name=".AuthActivity"
             android:theme="@style/Details" />

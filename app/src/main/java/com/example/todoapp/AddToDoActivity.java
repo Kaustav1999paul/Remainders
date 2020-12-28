@@ -2,6 +2,7 @@ package com.example.todoapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Build;
@@ -10,6 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -22,6 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -36,6 +39,8 @@ public class AddToDoActivity extends AppCompatActivity {
     String tit, desc, id, postState;
     private FirebaseUser user;
     Map<String, Object> doc;
+    private CardView isChecked;
+    private CheckBox completed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,8 @@ public class AddToDoActivity extends AppCompatActivity {
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
+        completed = findViewById(R.id.completed);
+        isChecked = findViewById(R.id.isChecked);
         user = FirebaseAuth.getInstance().getCurrentUser();
         ok = findViewById(R.id.ok);
         id = getIntent().getStringExtra("id");
@@ -64,6 +71,8 @@ public class AddToDoActivity extends AppCompatActivity {
             }
         });
 
+
+
         if (postState.equals("new")){
             ok.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -80,6 +89,19 @@ public class AddToDoActivity extends AppCompatActivity {
             });
         }
         else {
+            isChecked.setVisibility(View.VISIBLE);
+            completed.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(AddToDoActivity.this, "Completed", Toast.LENGTH_SHORT).show();
+
+                    db.collection("Users").document(user.getUid()).collection("Records").document(id).delete();
+                    Intent intent = new Intent(AddToDoActivity.this, HomeActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                }
+            });
+
             ok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
